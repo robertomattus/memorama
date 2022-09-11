@@ -1,0 +1,32 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+.restart-btn {
+    position: relative;
+    left: 10.8rem;
+    margin-top: 1rem;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc84d0;
+    color: #6462ef;
+}
+
+.restart-btn:hover{
+    background-color: #6462ef;
+    color: #dc84d0;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+@media screen and (max-width: 960px){
+    .board{
+        max-width: 300px;
+    }
+}
