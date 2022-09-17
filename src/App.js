@@ -36,6 +36,9 @@ const App = () => {
       setselectedMemoBlock(memoBlock); // Just selected (single block)
     } else if(selectedMemoBlock.emoji === memoBlock.emoji) {
       setselectedMemoBlock(null); // Not a apar selected
+      
+      //? How to recognize when you have won
+
     } else {
       setAnimating(true); // we make a par, so they blocked
       setTimeout(() => {
@@ -46,7 +49,6 @@ const App = () => {
         setAnimating(false);
       }, 1000);
     }
-
   }
 
   //! ADD A COUNTER LIMIT TO WIN

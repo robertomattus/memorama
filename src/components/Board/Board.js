@@ -3,6 +3,18 @@ import './Board.css';
 
 const Board = ({animating, handleMemoClick, memoBlocks, restart}) => {
 
+    //!
+    // setTimeout(() => {
+    //     console.log("Hola");
+    // }, 1000);   
+
+    // function saludos(){
+    //     console.log("Uno")
+    // }
+    
+    // setTimeout(saludos, 1000);
+    //!
+
     return (
         <main className="board">
             {memoBlocks.map( (memoBlock, i) => {

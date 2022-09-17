@@ -7,20 +7,26 @@
 }
 
 .restart-btn {
+    background-color: #00C6BF;
+    color: #ecf0f3;
     position: relative;
-    left: 10.8rem;
+    left: 12.4rem;
     margin-top: 1rem;
     padding: 10px;
     outline: none;
     border: none;
-    border-radius: 4px;
-    background-color: #dc84d0;
-    color: #6462ef;
+    border-radius: 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.restart-btn i{
+    font-size: 1.5rem;
 }
 
 .restart-btn:hover{
-    background-color: #6462ef;
-    color: #dc84d0;
+    background-color: #FFF7D6;
+    color: black;
     cursor: pointer;
     transition: all ease 0.5s;
 }
@@ -28,5 +34,9 @@
 @media screen and (max-width: 960px){
     .board{
         max-width: 300px;
+    }
+
+    .restart-btn{
+        left: 7.7rem;
     }
 }
